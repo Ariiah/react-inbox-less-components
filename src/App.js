@@ -8,16 +8,18 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      emails: this.props.emails
+      emails: this.props.emails,
     }
   }
+
+  
 
 
 
   render() {
     return (<div>
       <h1>React Inbox</h1>
-      <Toolbar/>
+      <Toolbar emails={this.state.emails}/>
       <MessageList emails={this.state.emails}/>
     </div>)
   }

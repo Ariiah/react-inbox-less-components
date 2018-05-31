@@ -9,7 +9,7 @@ class Toolbar extends Component {
             <span className="badge badge">2</span>
             unread messages
           </p>
-
+          
           <button className="btn btn-default">
             <i className="fa fa-check-square-o"></i>
           </button>

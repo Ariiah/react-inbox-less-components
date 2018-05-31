@@ -6,7 +6,15 @@ const MessageList = ({ emails }) => {
     <div>
       {
         emails.map((email, id) => {
-          return <Message key={id} email={email} messages={messages}/>
+          return <Message
+            key={id}
+            email={email}
+            // emails={emails}
+            selected={email.selected}
+            starred={email.starred}
+            read={email.read}
+            labels={email.labels}
+                 />
         })
       }
     </div>
